@@ -8,15 +8,18 @@ Exercises
 4. Complete triangle.
 5. Add width parameter.
 """
-import freegames
-help(freegames)
+
 from turtle import *
 
 from freegames import vector
+ponto = vector (10,20)
+ponto.x
+ponto.y
+
 
 
 def line(start, end):
-    """Draw line from start to end."""
+    'ta feito'
     up()
     goto(start.x, start.y)
     down()
@@ -24,7 +27,7 @@ def line(start, end):
 
 
 def square(start, end):
-    """Draw square from start to end."""
+    'ta feito'
     up()
     goto(start.x, start.y)
     down()
@@ -38,18 +41,26 @@ def square(start, end):
 
 
 def circle(start, end):
-    """Draw circle from start to end."""
-    pass  # TODO
+    #importar o turtle (turtle.circle)
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+    
+    for count in range(4):
+        forward(2)
+        right(2)
 
-
-def rectangle(start, end):
-    """Draw rectangle from start to end."""
-    pass  # TODO
+    end_fill()
 
 
 def triangle(start, end):
-    """Draw triangle from start to end."""
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+    
+    for count in range 
 
 
 def tap(x, y):
