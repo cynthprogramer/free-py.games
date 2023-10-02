@@ -47,10 +47,24 @@ def circle(start, end):
     down()
     begin_fill()
     
-    for count in range(4):
+    for count in range(90):
         forward(2)
-        right(2)
+        left(2)
 
+    end_fill()
+
+def rectangle (start, end):
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+
+    for count in range(2):
+        forward(end.x - start.y)
+        left(90)
+        forward((end.x - start.x)/2)
+        left(90)
+    
     end_fill()
 
 
@@ -60,7 +74,11 @@ def triangle(start, end):
     down()
     begin_fill()
     
-    for count in range 
+    for count in range (2):
+        forward(end.x - start.x)
+        left(90)
+
+    end_fill()
 
 
 def tap(x, y):
@@ -87,7 +105,7 @@ onscreenclick(tap)
 listen()
 onkey(undo, 'u')
 onkey(lambda: color('black'), 'K')
-onkey(lambda: color('white'), 'W')
+onkey(lambda: color('Purple'), 'P')
 onkey(lambda: color('green'), 'G')
 onkey(lambda: color('blue'), 'B')
 onkey(lambda: color('red'), 'R')
